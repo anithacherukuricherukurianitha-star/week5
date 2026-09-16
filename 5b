@@ -1,0 +1,27 @@
+ren: [
+          const Text(
+            'Provider Counter',
+            style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+
+          const SizedBox(height: 10),
+
+          Text(
+            '${counter.count}',
+            style: const TextStyle(
+              fontSize: 56,
+            ),
+          ),
+
+          ElevatedButton(
+            onPressed: counter.increment,
+            child: const Text('Increment'),
+          ),
+        ],
+      ),
+    );
+  }
+}
